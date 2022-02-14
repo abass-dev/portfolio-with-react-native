@@ -3,8 +3,8 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
 	defaultContainer: {
 	    flex:1,
-	    paddingHorizontal: 5,
-	    paddingVertical: 5,
+	    paddingHorizontal: 3,
+	    paddingVertical: 3,
 	    backgroundColor: "#000f12"
 	},
 	smText: {

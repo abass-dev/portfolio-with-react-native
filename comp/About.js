@@ -1,4 +1,4 @@
-import {SafeAreaView, ScrollView, Linking, Image, View, Text} from 'react-native'
+import {TouchableOpacity, SafeAreaView, ScrollView, Linking, Image, View, Text} from 'react-native'
 import style from '../Style'
 import Ionicons from '@expo/vector-icons/Ionicons'
 
@@ -10,7 +10,7 @@ export default function About() {
         }
     }
     return (
-        <SafeAreaView style={style.defaultContainer}>
+        <SafeAreaView showsVerticalScrollIndicator={false} style={style.defaultContainer}>
             <ScrollView>
                 <View style={{flexDirection: 'row'}}>
                     <Text style={{color: '#9ceafd',fontSize: 22,fontFamily: 'monospace'}}>Hello, </Text>
@@ -27,9 +27,24 @@ export default function About() {
                 </View>
                 
                 <View style={style.aboutButtonContainer}>
-                    <Text style={style.resumeButton}>RESUME</Text>
+                    <TouchableOpacity onPress={() => linkingPage("https://abass-dev.github.io/static/media/abass_cv_fr.3c13167d.pdf")}>
+                        <Text style={style.resumeButton}>RESUME <Ionicons size={20} name="download"/></Text>
+                    </TouchableOpacity>
                     <View style={style.aboutSocialButtonContainer}>
-                    <Ionicons name="code" />
+                        <View style={{flexDirection: 'row'}}>
+                            <TouchableOpacity onPress={() => linkingPage("https://www.facebook.com/abasscheik.ben")}>
+                                <Ionicons style={{paddingHorizontal:5}} size={30} name="logo-facebook" color="#777" />
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => linkingPage("https://github.com/abass-dev")}>
+                                <Ionicons style={{paddingHorizontal:5}} size={30} name="logo-github" color="#777" />
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => linkingPage("https://www.linkedin.com/in/abass-ben-cheik-b49a9a219")}>
+                                <Ionicons style={{paddingHorizontal:5}} size={30} name="logo-linkedin" color="#777" />
+                            </TouchableOpacity>
+                            <TouchableOpacity onPress={() => linkingPage("https://twitter.com/abasscheik1")}>
+                                <Ionicons style={{paddingHorizontal:5}} size={30} name="logo-twitter" color="#777" />
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>
             </ScrollView>
