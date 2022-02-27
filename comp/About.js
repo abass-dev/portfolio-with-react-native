@@ -21,8 +21,13 @@ export default function About() {
                     <Image style={style.profilePic} source={require('../assets/images/abass.jpg')} />
                     <View style={style.aboutText}>
                         <Text style={style.bigText}>About Me</Text>
-                        <Text style={style.smText}>I am a Web, Mobile and Software developer passionate about the internet and programming for over 6 years. In my free time, I write articles on
-                        <Text onPress={() => linkingPage("https://todaydevs.com")} style={style.colorPrimary}> todaydevs</Text> and contribute to the <Text onPress={() => linkingPage("https://github.com/abass-dev")} style={style.colorPrimary}> Open-source</Text> community.</Text>
+                        <Text style={style.smText}>
+                          I'm a Web, Mobile and Software developer passionate about the internet and programming for over 6 years. In my free time, I write articles on  
+                          <Text style={style.colorPrimary} onPress={() => linkingPage("https://todaydevs.com")}> todaydevs.com</Text>
+                          , share videos on YouTube and contribute to the Open-Source community. I'm the Creator of 
+                          <Text color={style.colorPrimary} onPress={() => linkingPage("https://github.com/abass-dev/nigatedev")}>Nigatedev framework</Text> and author of
+                          <Text style={style.colorPrimary} onPress={() => linkingPage("https://todaydevs.com")}> todaydevs (New Website)</Text>
+                        </Text>
                     </View>
                 </View>
                 
