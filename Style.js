@@ -56,5 +56,21 @@ export default StyleSheet.create({
     todo: {
         color: '#fff',
         fontSize: 35
+    },
+    sayHiBtnContainer: {
+      flex:1,
+      alignItems: 'center',
+      marginVertical: 20,
+    },
+    sayHiBtn: {
+      width: 150,
+      fontSize: 20,
+      color: 'white',
+      alignItems:'center',
+      textAlign:'center',
+      borderRadius: 2,
+      borderWidth: 1,
+      padding: 8,
+      borderColor: "#9ceafd"
     }
 });

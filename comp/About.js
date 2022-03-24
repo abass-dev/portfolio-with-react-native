@@ -2,13 +2,13 @@ import {TouchableOpacity, SafeAreaView, ScrollView, Linking, Image, View, Text} 
 import style from '../Style'
 import Ionicons from '@expo/vector-icons/Ionicons'
 
-export default function About() {
-    
-    function linkingPage (url) {
+export function linkingPage (url) {
         if (Linking.canOpenURL(url)) {
             return Linking.openURL(url)
         }
     }
+export default function About() {
+    
     return (
         <SafeAreaView showsVerticalScrollIndicator={false} style={style.defaultContainer}>
             <ScrollView>
