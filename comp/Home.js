@@ -40,7 +40,7 @@ export default function Home() {
                 >
                     <Tab.Screen name="About" component={About} options={{title: "About"}}/>
                     <Tab.Screen name="Work" component={Work} options={{title: "Work"}}/>
-                    <Tab.Screen name="Skill" component={Skill} options={{title: "Skill"}}/>
+                    <Tab.Screen name="Skill" component={Skill} options={{title: "Skill & Tools"}}/>
                     <Tab.Screen name="Project" component={Project} options={{title: "Project"}}/>
                     <Tab.Screen name="Contact" component={Contact} options={{title: "Contact"}}/>
                 </Tab.Navigator>

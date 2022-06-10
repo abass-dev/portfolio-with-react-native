@@ -5,7 +5,7 @@ export default StyleSheet.create({
 	    flex:1,
 	    paddingHorizontal: 3,
 	    paddingVertical: 3,
-	    backgroundColor: "#000f12"
+	    backgroundColor: "#000f12",
 	},
 	smText: {
 	    fontFamily: 'serif',
