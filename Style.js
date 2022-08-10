@@ -3,8 +3,8 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
 	defaultContainer: {
 	    flex:1,
-	    paddingHorizontal: 3,
-	    paddingVertical: 3,
+	    paddingHorizontal:11,
+        paddingTop: 15,
 	    backgroundColor: "#000f12",
 	},
 	smText: {
@@ -72,5 +72,10 @@ export default StyleSheet.create({
       borderWidth: 1,
       padding: 8,
       borderColor: "#9ceafd"
+    },
+    primaryTitle: {
+        textAlign:"center",
+        color: '#fff',
+        fontSize:29
     }
 });
