@@ -7,6 +7,9 @@ const canOpenAlink = (url) => {
     }
 }
 
+export const Alink = (url) => {
+    canOpenAlink(url)
+}
 export const AlinkIcon = ({url, color, size, iconName}) => {
   return (
     <TouchableOpacity onPress={() => canOpenAlink(url)}>

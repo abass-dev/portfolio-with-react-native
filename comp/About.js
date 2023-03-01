@@ -1,7 +1,6 @@
 import {Dimensions, TouchableOpacity, SafeAreaView, StyleSheet, ScrollView, Image, View, Text} from 'react-native'
 import style from '../Style'
-import Alink from "./helper/Alink"
-import {AlinkIcon, AlinkButton} from "./ui/Alink"
+import {Alink, AlinkIcon, AlinkButton} from "./ui/Alink"
 import Ionicons from '@expo/vector-icons/Ionicons'
 import Style from '../Style'
 
