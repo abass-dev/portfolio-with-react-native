@@ -38,7 +38,7 @@ export default function Home() {
                         tabBarInactiveTintColor: "#000f12",
                     })}
                 >
-                    <Tab.Screen name="About" component={About} options={{title: "About"}}/>
+                    <Tab.Screen name="About" component={About} options={{headerShown: false}}/>
                     <Tab.Screen name="Work" component={Work} options={{title: "Work"}}/>
                     <Tab.Screen name="Skill" component={Skill} options={{title: "Skill & Tools"}}/>
                     <Tab.Screen name="Project" component={Project} options={{title: "Project"}}/>

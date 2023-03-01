@@ -3,14 +3,11 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
 	defaultContainer: {
 	    flex:1,
-	    paddingHorizontal:11,
-        paddingTop: 15,
 	    backgroundColor: "#000f12",
 	},
 	smText: {
-	    fontFamily: 'serif',
-	    color: "white",
-	    fontSize: 15
+	    fontFamily: 'monospace',
+	    color: "white"
 	},
 	bigText: {
 	    fontFamily: 'serif',
